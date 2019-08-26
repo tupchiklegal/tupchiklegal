@@ -25,27 +25,11 @@
     
         <div class="row mt-5">
           <div class="col-sm-3"></div>
-          <div class="col-sm-6 bg-light rounded-lg shadow-lg">
-            <div hidden id="contact-info" class="p-5">
-              <table class="table table-borderless">
-                <tbody class="text-dark">
-                  <tr>
-                    <td>Convention Towers</td>
-                    <td>Phone (716) 856-5556</td>
-                  </tr>
-                  <tr>
-                    <td>43 Court Street, Mezzanine</td>
-                    <td>Fax (716) 358-1015</td>
-                  </tr>
-                  <tr>
-                    <td>Buffalo, NY 14202</td>
-                    <td>vgabrieletlg@gmail.com</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div id="contact-quote" class="text-dark p-5">
-              <h3 style="margin-top: auto; margin-bottom: auto;"><i>"Some inspiring quote about law or something it doesnt matter."</i></h3>
+          <div class="col-sm-6 bg-light rounded-lg shadow-lg" style="height: 150px;">
+            <div class="text-dark p-5">
+                <transition name="contact-transition"  enter-active-class="animated flipInX">
+                  <component :is="contact"></component>
+                </transition>
             </div>
           </div>     
           <div class="col-sm-3"></div>      
@@ -61,7 +45,6 @@
     <quote></quote>
     <quote></quote>
     <quote></quote>
-    <quote></quote>
   </div>
 
 
@@ -69,22 +52,32 @@
 </template>
 
 <script>
-
 import quote from './quote.vue'
+import ContactInfo from './contact/ContactInfo.vue';
+import ContactQuote from './contact/ContactQuote.vue';
+
 
 export default {
   components: {
-    quote
+      quote,  
+      ContactInfo,
+      ContactQuote
   },
   methods: {
     test() {
-      console.log('test');
+      this.contact = ContactInfo
+    }
+  },
+  data() {
+    return {
+      contact: ContactQuote
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style>
+
 #home {
   background-image: url("./../assets/stock3.jpg");
   background-repeat: no-repeat;
@@ -93,5 +86,8 @@ export default {
 }
 #h1-quote {
   text-shadow: 2px 4px 5px rgba(black, .15);
+}
+#gallery-content {
+  height: 923px;
 }
 </style>

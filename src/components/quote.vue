@@ -10,5 +10,6 @@
   display: inline-block;
   border-bottom: 2px solid orange;
   width: 300px;
+  height: 150px;
 }
 </style>
