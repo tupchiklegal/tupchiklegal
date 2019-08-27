@@ -25,7 +25,7 @@
     
         <div class="row mt-5">
           <div class="col-sm-3"></div>
-          <div class="col-sm-6 bg-light rounded-lg shadow-lg" style="height: 150px;">
+          <div class="col-sm-6 bg-light rounded-lg shadow-lg" id="contact-display" style="height: 150px;">
             <div class="text-dark p-5">
                 <transition name="contact-transition"  enter-active-class="animated flipInX">
                   <component :is="contact"></component>

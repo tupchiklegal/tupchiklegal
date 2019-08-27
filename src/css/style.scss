@@ -32,3 +32,10 @@ footer {
     color: rgb(113, 117, 121);
     text-align: center;
 }
+
+@include media-breakpoint-down(md) { 
+    #contact-display {
+        height: auto !important;
+    }    
+}
+

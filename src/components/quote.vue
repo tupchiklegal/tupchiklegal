@@ -1,6 +1,6 @@
 <template>
   <p class="quote shadow m-3 p-4 text-center">
-    "Thanks Vanessa, very cool." <br>	- God
+    "Did a very good job." <br>	- Client
   </p>
 </template>
 
@@ -10,6 +10,5 @@
   display: inline-block;
   border-bottom: 2px solid orange;
   width: 300px;
-  height: 150px;
 }
 </style>
