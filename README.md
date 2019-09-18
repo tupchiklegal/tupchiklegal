@@ -1,5 +1,10 @@
 # tupchicklaw
 
+#### Additional:
+
+Bio Summary
+Bio for Lana
+
 ## Project setup
 ```
 npm install

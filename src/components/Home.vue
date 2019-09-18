@@ -13,7 +13,7 @@
 
         <div id="gallery-image-footer"></div>
 
-        <h1 id="h1-quote" class="text-light font-weight-bold display-4 mt-5">
+        <h1 id="h1-quote" class="text-light font-weight-bold display-3 mt-5">
           HOLISTIC LEGAL RESOLUTION
         </h1>
 

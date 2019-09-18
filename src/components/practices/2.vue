@@ -5,8 +5,6 @@
   
   <div class="container mt-4">
 
-    <h5>Personalized service throughout the Divorce Process</h5>
-
     <p>
       Unfortunately, many marriages end in separation or divorce which can be overwhelming 
       not only for the spouses but the entire family as well. 

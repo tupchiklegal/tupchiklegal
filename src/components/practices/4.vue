@@ -5,63 +5,49 @@
   
   <div class="container mt-4">
 
-    <h5>Personalized service throughout the Divorce Process</h5>
-
     <p>
-      Finding the right divorce lawyer can make a difference in resolving what 
-      can be a difficult time of transition. Whether it’s about understanding how 
-      to file for divorce or serving divorce papers, our attorneys will guide you 
-      through the process, provide you with personalized attention, 
-      and be sure to help you navigate the complexities of Divorce:
+      When you decide to get married, 
+      it’s a big step and an even bigger commitment. 
+      You agree to be taking on care and responsibility for a spouse, 
+      and even children. 
+      Being fully aware of the laws with regard to marriage is a 
+      responsible way to be prepared to avoid any problems down the road.
+      Prenuptial agreements, commonly known as “prenups,”
+      are legal documents that outline how engaged couples will divide 
+      their assets if they divorce. 
+      And, in recent years, more people have been requesting them, 
+      according to a survey of matrimonial lawyers. 
+      Our firm offers services concerning the following:
     </p>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <ul>
-          <li>High Asset/Net Worth Divorce</li>
-          <li>Marital Agreements</li>
-          <li>Contested, Uncontested, and No-Fault Divorce</li>
-          <li>Filing for Divorce</li>
-          <li>Legal Separation</li>
-          <li>Modification of Agreements</li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <ul>
-          <li>Negotiation and Settlement</li>
-          <li>Same-sex Relationships</li>
-          <li>Separation Agreements</li>
-          <li>Pre and Post Marital (post-nuptial) Agreements</li>
-          <li>Co-Habitation Agreements</li>
-          <li>Asset Division</li>
-        </ul>
-      </div>      
-      <div class="col-sm-4">
-        <ul>
-          <li>Spousal Support</li>
-          <li>Child Support</li>
-          <li>Mediation</li>
-          <li>Post-judgment Modifications</li>
-        </ul>
-      </div>
-    </div>
+    <ul>
+      <li>Prenuptial Agreements</li>
+      <li>Pre-marriage asset consultation</li>
+      <li>Property valuation</li>
+    </ul>
 
     <p>
-      Tupchik Legal Group provides comprehensive legal representation to clients 
-      throughout the divorce and separation process. 
-      Our lawyers are by your side every step of the way beginning with the 
-      initial divorce filing through the negotiation process, 
-      litigation before both the Family Court and Supreme Court, 
-      and the appeals process. We also help clients modify existing 
-      divorce agreements to better reflect the realities of their evolving daily lives.
+      A pre-marital (or pre-nuptial) agreement is entered into 
+      before the marriage and specifies each future spouses property 
+      ownership and the property rights of each party if they decide to divorce. 
+      The benefits of a prenuptial agreement include:
     </p>
 
+
+    <ul>
+      <li>Provides financial clarity</li>
+      <li>Reduces conflicts in a divorce</li>
+      <li>Avoids division of property by the court</li>
+    </ul>
+
     <p>
-      Tupchik Legal Group will negotiate to resolve issues in the most amicable way. 
-      We never encourage litigation when a beneficial settlement agreement can be reached. 
-      We rely on our experience to craft comprehensive, 
-      smart legal strategies that protect our clients’ interests, 
-      resolve their legal disputes and help them move forward with their lives.
+      A well designed premarital agreement will also 
+      clarify the management of joint bank accounts, 
+      household bills, and credit card payments, 
+      determine the amount of income that will be set aside for savings, 
+      and also specify how disputes will be resolved. 
+      In order for the agreement to be approved by the Court, 
+      it must be fair, and both parties must enter into it free of coercion.
     </p>
 
   </div>

@@ -60,8 +60,31 @@
 
     <h4 class="text-primary">Our Team</h4>
 
-    <div>
-      <person bio='test' name='Shane Griffin' picture='empty_profile.jpeg'></person>
+    <div class="container">
+      <person name='Vanessa C. Gabriele' picture='empty_profile.jpeg'>
+        An associate in general practice at Bouvier Law LLP. 
+        Ms. Gabriele graduated cum laude from the University of Buffalo and the 
+        University of Buffalo Law School where she served as the case 
+        note editor for the Buffalo Journal of Gender Law and Social Policy. 
+        Ms. Gabriele has devoted her legal practice to matrimonial and family law a
+        nd has established a reputation as a knowledgeable resource and effective advocate 
+        for her clients in all matters of divorce, child custody and family court proceedings. 
+        Ms. Gabriele is a member of the Executive Committee of the Family Law Section 
+        of the New York State Bar Association. 
+        In addition, she lectures extensively in the area of Matrimonial and Family Law 
+        and has chaired CLE seminars in Erie County and New York State Bar Associations
+        as well as lectured at such seminars. Further, 
+        Ms. Gabriele has guest lectured on the practice of Matrimonial and 
+        Family Law at the University at Buffalo Law School and the State University at Buffalo. 
+        Ms. Gabriele is one of the co-chairs of the Erie County Bar Association’s 
+        Matrimonial and Family Law Committee. 
+        She is also a member of the Erie County Family Court Practice and Procedure Committee. 
+        rior to her employment here at Bouvier Law, Ms. Gabriele worked at the 
+        boutique matrimonial and family law firm of J. Adams and Associates, PLLC, 
+        a firm dedicated exclusively to matrimonial and family law litigation. 
+        She worked exclusively with and was trained by Joan Casilio Adams, Esq., 
+        a fellow of the American Academy of Matrimonial Lawyers and well respected by the Western New York Matrimonial Bar.
+      </person>
       <!-- <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
       <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
       <person name='Shane Griffin' picture='empty_profile.jpeg'></person> -->
