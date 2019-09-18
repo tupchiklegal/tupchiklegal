@@ -1,5 +1,5 @@
 <template>
     <h3 style="margin-top: auto; margin-bottom: auto;">
-        <i>"Some inspiring quote about law or something it doesnt matter."</i>
+        <i>"We offer clients personalized attention and one-on-one service. You will never get lost in the shuffle."</i>
     </h3>
 </template>

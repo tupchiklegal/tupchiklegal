@@ -18,9 +18,9 @@ $primary: #b8521f;
 .bg-dark-transparent {
     background: rgba(theme-color(dark), .6);
 }
-#gallery-content {
-    background: linear-gradient(180deg, rgba(theme-color(dark), .3) 0%, rgba(black, .8) 80%, white 80.1%);
-}
+// #gallery-content {
+//     background: linear-gradient(180deg, rgba(theme-color(dark), .3) 0%, rgba(black, .8) 80%, white 80.1%);
+// }
 
 .router-link-exact-active {
     color: $primary !important;

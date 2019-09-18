@@ -27,11 +27,31 @@
             </li>
             <b-nav-item-dropdown text="PRACTICE AREAS" right>
               <li>
-                <router-link class="dropdown-item" to="/practice/1">Area 1</router-link>
+                <router-link class="dropdown-item" to="/practice/divorce-seperation">
+                  Divorce & Seperation
+                </router-link>
               </li>
               <li>
-                <router-link class="dropdown-item" to="/practice/2">Area 2</router-link>
+                <router-link class="dropdown-item" to="/practice/high-asset">
+                  High-Asset / High Net Worth Divorce Representation
+                </router-link>
               </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/child-custody">
+                  Child Custody & Visitation
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/pre-marriage">
+                  Pre-Marriage Planning
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/modifications">
+                  Modifications of Divorce Judgment
+                </router-link>
+              </li>
+                      
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>

@@ -3,12 +3,18 @@
 
   <div id="home" class="container-fluid">
     <div class="row h-100">
-      <div id="gallery-content" class="text-center col-sm-12 h-100 p-5">
+      <div id="gallery-content" class="text-center col-sm-12 h-100">
 
-        <br>
+        <div v-if="bg1Active" :style="{'background-image': 'url(' + require(`./../assets/${images[bg1Index]}`) + ')'}" id="gallery-image-1"></div>
 
-        <h1 id="h1-quote" class="text-light font-weight-bold display-4">
-        HOLISTIC LEGAL RESOLUTION
+        <transition v-on:after-enter="afterGalleryFadeIn" enter-active-class="animated fadeIn">
+          <div v-if="bg2Active" :style="{'background-image': 'url(' + require(`./../assets/${images[bg2Index]}`) + ')'}" id="gallery-image-2"></div>
+        </transition>
+
+        <div id="gallery-image-footer"></div>
+
+        <h1 id="h1-quote" class="text-light font-weight-bold display-4 mt-5">
+          HOLISTIC LEGAL RESOLUTION
         </h1>
 
         <br>
@@ -16,7 +22,7 @@
         <div class="row mt-5">
           <div class="col-sm-3"></div>
           <div class="col-sm-6">
-            <button v-on:click="test" class="btn btn-primary pt-3 pb-3 pl-5 pr-5"><h4>Contact Us</h4></button>
+            <button v-on:click="showContact" class="btn btn-primary shadow-lg pt-3 pb-3 pl-5 pr-5"><h4>Contact Us</h4></button>
           </div> 
           <div class="col-sm-3"></div>      
         </div>
@@ -25,7 +31,7 @@
     
         <div class="row mt-5">
           <div class="col-sm-3"></div>
-          <div class="col-sm-6 bg-light rounded-lg shadow-lg" id="contact-display" style="height: 150px;">
+          <div class="col-sm-6 bg-light rounded-lg shadow-lg" id="contact-display" style="height: 200px;">
             <div class="text-dark p-5">
                 <transition name="contact-transition"  enter-active-class="animated flipInX">
                   <component :is="contact"></component>
@@ -63,31 +69,76 @@ export default {
       ContactInfo,
       ContactQuote
   },
-  methods: {
-    test() {
-      this.contact = ContactInfo
-    }
+  created () {
+    window.setInterval(this.incrementGallery, 5000)
   },
+  methods: {
+    showContact() {
+      this.contact = ContactInfo
+    },
+    incrementGallery() {
+      this.bg2Active = true
+    },
+    afterGalleryFadeIn() {
+      this.bg1Index = this.bg2Index;
+      this.bg2Index = this.bg2Index == this.images.length - 1 ? 0 : this.bg2Index + 1;
+      this.bg1Active = true;
+      this.bg2Active = false;
+    }
+   },
   data() {
     return {
+      bg1Index: 0,
+      bg2Index: 1,
+      bg1Active: true,
+      bg2Active: false,
+      images: [
+        "stock4.jpg",
+        "stock3.jpg",
+        "stock7.jpg"
+
+      ],
+
       contact: ContactQuote
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 
-#home {
-  background-image: url("./../assets/stock3.jpg");
+#gallery-content {
+  // background: linear-gradient(180deg, rgba(black, .3) 0%, rgba(black, .8));
+}
+
+#gallery-image-1 { z-index: -2; }
+#gallery-image-2 { z-index: -1; }
+
+#gallery-image-1, #gallery-image-2 {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  height: 100%; 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0%;
+  background-position: 10%;
 }
+
+#gallery-image-footer {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  height: 20%; 
+  bottom: 0; 
+  background-color: white;
+}
+
 #h1-quote {
-  text-shadow: 2px 4px 5px rgba(black, .15);
+  z-index: 100;
+  text-shadow: 2px 4px 9px rgba(black, .5);
 }
 #gallery-content {
   height: 923px;
 }
+
 </style>

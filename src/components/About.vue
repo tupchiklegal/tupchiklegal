@@ -1,28 +1,74 @@
 <template>
+<div>
+  <div class="container p-1">
+    <router-link to="/" >	Home </router-link> &gt; About
+  </div>
+  <div class="container-fuid bg-dark">
+    <div class="container p-3">
+      <h1 class="text-light">About</h1>
+    </div>
+  </div>
   <div id="about" class="container mt-4">
-    <h2 class="display-4">About</h2>
-    <hr>
-    <h4 class="text-primary">Our Mission</h4>
+
+    <h4 class="text-primary">Family and Matrimonial Law</h4>
+    <p>
+      When it comes to family, legal matters can be challenging, sensitive and highly volatile. 
+      At Bouvier Law, you’ll find our family and matrimonial law attorneys combine compassion with 
+      practical advice to deliver caring, yet effective resolutions for our clients. 
+      <strong> We offer clients personalized attention and one-on-one service. 
+      You will never get lost in the shuffle. </strong>
+      Our attorneys are compassionate advocates who accord every case a high level of importance. 
+      Our goal is to successfully resolve family legal matters while minimizing cost and emotional upheaval for our clients. 
+      With over 40 combined years of experience in handling family law matters right here in Buffalo, 
+      our practice is well-seasoned in issues involving:
+    </p>
     <div class="row">
       <div class="col-sm-6">
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at sem placerat, ullamcorper augue id, tincidunt tellus. Proin dapibus bibendum cursus. Quisque a egestas purus. Curabitur quis luctus ipsum. Nulla justo neque, viverra quis odio in, dignissim aliquam eros. Cras gravida in diam eget eleifend. Maecenas elit purus, convallis ac aliquet maximus, vulputate sed quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <ul>
+          <li>
+            <router-link to="/practice/divorce-seperation">
+              Divorce & Seperation
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/practice/high-asset">
+              High-Asset / High Net Worth Divorce Representation
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/practice/child-custody">
+              Child Custody & Visitation
+            </router-link>
+          </li>  
+        </ul>
       </div>
-       <div class="col-sm-6">
-        <p class="text-justify">Maecenas lectus urna, fringilla non est at, porta tempor neque. Maecenas dictum, justo id lobortis tempus, turpis ante fermentum felis, eget elementum enim ipsum nec turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam tempus interdum nibh sed ultricies. Mauris scelerisque tempus commodo. Nulla elementum porta aliquam. Donec et sem convallis, feugiat augue quis, fringilla urna. Aenean vitae nunc sit amet ex malesuada venenatis et eget nisl. Integer accumsan neque urna, in cursus dolor fringilla eu.</p>
+      <div class="col-sm-6">
+        <ul>  
+          <li>
+            <router-link to="/practice/pre-marriage">
+              Pre-Marriage Planning
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/practice/modifications">
+              Modifications of Divorce Judgment
+            </router-link>
+          </li>    
+        </ul>
       </div>
     </div>
-    <h4 class="text-primary">About Us</h4>
+
+    <h4 class="text-primary">Our Team</h4>
 
     <div>
-      <person></person>
-      <person></person>
-      <person></person>
-      <person></person>
-      <person></person>
-
+      <person bio='test' name='Shane Griffin' picture='empty_profile.jpeg'></person>
+      <!-- <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
+      <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
+      <person name='Shane Griffin' picture='empty_profile.jpeg'></person> -->
     </div>
 
   </div>
+</div>
 </template>
 
 <script>

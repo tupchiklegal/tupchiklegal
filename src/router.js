@@ -2,8 +2,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './components/Home'
 import About from './components/About'
-import PracticeArea1 from './components/PracticeArea1'
-import PracticeArea2 from './components/PracticeArea2'
+
+import Practice1 from './components/practices/1'
+import Practice2 from './components/practices/2'
+import Practice3 from './components/practices/3'
+import Practice4 from './components/practices/4'
+import Practice5 from './components/practices/5'
+
+
 
 Vue.use(Router)
 
@@ -20,14 +26,29 @@ export default new Router({
       component: About
     },
     {
-      path: '/practice/1',
-      name: 'Practice 1',
-      component: PracticeArea1
+      path: '/practice/divorce-seperation',
+      name: 'Divorce & Seperation',
+      component: Practice1
     },
     {
-      path: '/practice/2',
-      name: 'Practice 2',
-      component: PracticeArea2
-    }
+      path: '/practice/high-asset',
+      name: 'High-Asset / High Net Worth Divorce Representation',
+      component: Practice2    
+    },
+    {
+      path: '/practice/child-custody',
+      name: 'Child Custody & Visitation',
+      component: Practice3    
+    },
+    {
+      path: '/practice/pre-marriage',
+      name: 'Pre-Marriage Planning',
+      component: Practice4    
+    },
+    {
+      path: '/practice/modifications',
+      name: 'Modifications of Divorce Judgment',
+      component: Practice5    
+    },
   ]
 })
