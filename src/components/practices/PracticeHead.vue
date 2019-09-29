@@ -1,9 +1,9 @@
 <template>
 <div>
-  <div class="container p-2">
-    <router-link to="/" >	Home </router-link> &gt; 
+  <div class="container p-2 bg-light">
+    <router-link to="/" >	Home </router-link> -
     <router-link to="/about" >	About </router-link>
-    <span> &gt; {{ title }}</span>
+    <span> - {{ title }}</span>
   </div>
   <div class="container-fuid bg-dark">
     <div class="container p-3">

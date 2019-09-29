@@ -1,6 +1,10 @@
 <template>
   <p class="quote shadow m-3 p-4 text-center">
-    "Did a very good job." <br>	- Client
+    <span class="text-primary">
+     &#9733; &#9733; &#9733; &#9733; &#9733; <br>
+    </span>
+
+    "Award, accolade, review" <br>	- Client
   </p>
 </template>
 

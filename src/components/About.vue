@@ -1,7 +1,7 @@
 <template>
 <div>
-  <div class="container p-1">
-    <router-link to="/" >	Home </router-link> &gt; About
+  <div class="container p-2">
+    <router-link to="/" >	Home </router-link> - About
   </div>
   <div class="container-fuid bg-dark">
     <div class="container p-3">
@@ -61,6 +61,7 @@
     <h4 class="text-primary">Our Team</h4>
 
     <div class="container">
+      <person name='Lana V. Tupchik' picture='empty_profile.jpeg'></person>
       <person name='Vanessa C. Gabriele' picture='empty_profile.jpeg'>
         An associate in general practice at Bouvier Law LLP. 
         Ms. Gabriele graduated cum laude from the University of Buffalo and the 
@@ -85,9 +86,6 @@
         She worked exclusively with and was trained by Joan Casilio Adams, Esq., 
         a fellow of the American Academy of Matrimonial Lawyers and well respected by the Western New York Matrimonial Bar.
       </person>
-      <!-- <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
-      <person name='Shane Griffin' picture='empty_profile.jpeg'></person>
-      <person name='Shane Griffin' picture='empty_profile.jpeg'></person> -->
     </div>
 
   </div>

@@ -1,7 +1,7 @@
 <template>
-  <div class="container person">
+  <div class="container person p-0 mb-5">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 p-0">
             <img v-bind:src="require(`./../assets/${picture}`)" alt="">
       </div>
       <div class="col-sm-9">

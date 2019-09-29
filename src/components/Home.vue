@@ -13,7 +13,7 @@
 
         <div id="gallery-image-footer"></div>
 
-        <h1 id="h1-quote" class="text-light font-weight-bold display-3 mt-5">
+        <h1 id="h1-quote" class="text-light font-weight-bold display-4 mt-5">
           HOLISTIC LEGAL RESOLUTION
         </h1>
 
@@ -22,7 +22,10 @@
         <div class="row mt-5">
           <div class="col-sm-3"></div>
           <div class="col-sm-6">
-            <button v-on:click="showContact" class="btn btn-primary shadow-lg pt-3 pb-3 pl-5 pr-5"><h4>Contact Us</h4></button>
+            <button v-on:click="showContact" class="btn btn-primary shadow-lg pt-3 pb-3 pl-5 pr-5 m-1"><h4>Contact Us</h4></button>
+            <router-link to="about">
+              <button class="btn btn-secondary pt-3 pb-3 pl-5 pr-5 m-1"><h4>Learn More</h4></button>
+            </router-link>
           </div> 
           <div class="col-sm-3"></div>      
         </div>
@@ -45,7 +48,7 @@
   </div>
   
 
-  <div class="text-center quote-container">
+  <div class="text-center quote-container mt-2 pt-5">
     <quote></quote>
     <quote></quote>
     <quote></quote>
@@ -108,7 +111,7 @@ export default {
 <style lang="scss">
 
 #gallery-content {
-  // background: linear-gradient(180deg, rgba(black, .3) 0%, rgba(black, .8));
+  background: linear-gradient(180deg, rgba(black, .3) 0%, rgba(black, .8));
 }
 
 #gallery-image-1 { z-index: -2; }

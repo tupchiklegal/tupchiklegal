@@ -7,12 +7,12 @@
       </b-container>
     </div>
 
-    <b-navbar toggleable="lg" type="light" variant="light" class="shadow">
+    <b-navbar toggleable="lg" type="light" variant="light" class="shadow-sm">
       <b-container>
         <b-navbar-brand href="#">
-          <img src="./assets/logo_1.png" height="60" alt="logo" class="mr-4">
-
-          <span>Tupchick Legal Group</span>
+          <router-link to="/">
+            <img src="./assets/logo_text.png" height="60" alt="logo" class="mr-4">
+          </router-link>
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -65,27 +65,54 @@
         </transition>
       </div>
 
-    <footer class="p-4">
-      <div>
-        Home About Practice Areas
+    <footer class="p-4 d-flex justify-content-center align-items-center mt-5" style="min-height: 300px;">
+   
+      <div class="footer-container">
+        <div class="mb-3">
+          <img src="./assets/logo_text_gs.png" height="60" alt="logo_gs" class="img-fluid mr-4">
+        </div>
+        <div class="mb-3">
+          <router-link to="/"><span class="bottom-link">Home</span></router-link>
+          <router-link to="/about"><span class="bottom-link">About</span></router-link>
+          <router-link to="/about"><span class="bottom-link">Practice Areas</span></router-link>
+        </div>
+        <ContactInfo class="mb-3"></ContactInfo>
+        <div class="mb-3">Tupchick Legal Group 2019</div>
       </div>
-      <div>Tupckick Legal Group Copyright 2019</div>
+
     </footer>
     
   </div>
 </template>
 
 <script>
+import ContactInfo from './components/contact/ContactInfo.vue';
 
 
 export default {
   name: 'app',
   components: {
+    ContactInfo
   }
 }
 </script>
 
 <style>
 @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css';
+
+.bottom-link {
+  color: grey;
+  margin: 10px;
+}
+
+.footer-container {
+  width: 40%
+}
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    width: 95%
+  }
+}
+
 </style>
 
