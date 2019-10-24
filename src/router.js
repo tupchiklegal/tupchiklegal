@@ -8,6 +8,7 @@ import Practice2 from './components/practices/2'
 import Practice3 from './components/practices/3'
 import Practice4 from './components/practices/4'
 import Practice5 from './components/practices/5'
+import bio from './components/bio'
 
 
 
@@ -50,5 +51,10 @@ export default new Router({
       name: 'Modifications of Divorce Judgment',
       component: Practice5    
     },
+    {
+      path: '/about/vanessa-gabriele',
+      name: 'vanessa-gabriele',
+      component: bio    
+    }
   ]
 })

@@ -3,7 +3,12 @@
     
     <div class="bg-dark">
       <b-container class="text-right text-white p-1">
-        <a class="text-light small" href="#">Contact Us (716) 261-0917</a>
+        <a class="text-light small" href="#">Contact Us (716) 856-5556</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+
       </b-container>
     </div>
 
@@ -59,7 +64,7 @@
       </b-container>
     </b-navbar>
 
-      <div style="min-height: 900px;">
+      <div style="min-height: 700px;">
         <transition name="router-anim" enter-active-class="animated fadeIn">
             <router-view ></router-view>
         </transition>
@@ -107,6 +112,12 @@ export default {
 
 .footer-container {
   width: 40%
+}
+
+.fa {
+  color: white;
+  font-size: 14px;
+  margin: 0px 4px;
 }
 @media only screen and (max-width: 768px) {
   .footer-container {

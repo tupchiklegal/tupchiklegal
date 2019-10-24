@@ -35,7 +35,7 @@
         <div class="row mt-5">
           <div class="col-sm-3"></div>
           <div class="col-sm-6 bg-light rounded-lg shadow-lg" id="contact-display" style="height: 200px;">
-            <div class="text-dark p-5">
+            <div class="text-dark">
                 <transition name="contact-transition"  enter-active-class="animated flipInX">
                   <component :is="contact"></component>
                 </transition>
@@ -47,13 +47,12 @@
     </div>
   </div>
   
-
-  <div class="text-center quote-container mt-2 pt-5">
-    <quote></quote>
-    <quote></quote>
-    <quote></quote>
-    <quote></quote>
-    <quote></quote>
+  <div class="text-center quote-container mt-2 pt-5 d-flex flex-wrap p-3 justify-content-around">
+    <quote name="Divorce & Seperation" link="/practice/divorce-seperation"></quote>
+    <quote name="High-Asset / High Net Worth Divorce Representation" link="/practice/high-asset"></quote>
+    <quote name="Child Custody & Visitation" link="/practice/child-custody"></quote>
+    <quote name="Pre-Marriage Planning" link="/practice/pre-marriage"></quote>
+    <quote name="Modifications of Divorce Judgment" link="/practice/modifications"></quote>
   </div>
 
 
