@@ -8,9 +8,14 @@ $primary: #b8521f;
 
 $secondary: #0089b3;
 
+// $container-large-desktop: (1370px + $grid-gutter-width);
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1550px; }
+}
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif

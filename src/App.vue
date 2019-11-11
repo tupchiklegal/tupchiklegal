@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <div class="bg-dark">
+    <!-- <div class="bg-dark">
       <b-container class="text-right text-white p-1">
         <a class="text-light small" href="#">Contact Us (716) 856-5556</a>
         <a href="#" class="fa fa-facebook"></a>
@@ -10,13 +10,13 @@
         <a href="#" class="fa fa-envelope"></a>
 
       </b-container>
-    </div>
+    </div> -->
 
     <b-navbar toggleable="lg" type="light" variant="light" class="shadow-sm">
       <b-container>
         <b-navbar-brand href="#">
           <router-link to="/">
-            <img src="./assets/logo_text.png" height="60" alt="logo" class="mr-4">
+            <img src="./assets/logo_text.png" height="80" alt="logo" class="mt-1 mb-1 mr-4">
           </router-link>
         </b-navbar-brand>
 
