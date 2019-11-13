@@ -3,7 +3,7 @@
 
   <div id="home" class="container-fluid">
     <div class="row h-100">
-      <div id="gallery-content" class="col-sm-12 h-100">
+      <div id="gallery-content" class="p-0 col-sm-12 h-100">
         
         <div v-if="bg1Active" :style="{'background-image': 'url(' + require(`./../assets/${images[bg1Index]}`) + ')'}" id="gallery-image-1"></div>
 
@@ -14,11 +14,74 @@
 
         <!-- <div id="gallery-image-footer"></div> -->
 
-        <div class="container" style="padding-top: 250px; padding-bottom: 350px;">
+    <!-- <div class="bg-dark">
+      <b-container class="text-right text-white p-1">
+        <a class="text-light small" href="#">Contact Us (716) 856-5556</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-envelope"></a>
+
+      </b-container>
+    </div> -->
+    <b-navbar toggleable="lg" type="dark" class="fixed-top">
+      <b-container>
+        <b-navbar-brand href="#">
+          <router-link to="/">
+            <img src="./../assets/logo_text.png" height="80" alt="logo" class="mt-1 mb-1 mr-4">
+          </router-link>
+        </b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav class="ml-auto">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/">HOME</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/about">ABOUT</router-link>
+            </li>
+            <b-nav-item-dropdown text="PRACTICE AREAS" right>
+              <li>
+                <router-link class="dropdown-item" to="/practice/divorce-seperation">
+                  Divorce & Seperation
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/high-asset">
+                  High-Asset / High Net Worth Divorce Representation
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/child-custody">
+                  Child Custody & Visitation
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/pre-marriage">
+                  Pre-Marriage Planning
+                </router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/practice/modifications">
+                  Modifications of Divorce Judgment
+                </router-link>
+              </li>
+                      
+            </b-nav-item-dropdown>
+          </b-navbar-nav>
+        </b-collapse>
+
+      </b-container>
+    </b-navbar>
+
+        
+        <div class="container" style="padding-top: 325px; padding-bottom: 400px;">
           <div class="row">
             <div class="col-sm-9 text-light">
 
-                <h1 class="display-3" style="font-weight: 700">HOLISTIC LEGAL RESOLUTION</h1>
+                <h1 class="display-4" style="font-weight: 700">HOLISTIC LEGAL RESOLUTION</h1>
                 <p style="font-size:30px;">
                   We offer clients personalized attention and one-on-one service. You will never get lost in the shuffle.
                 </p>
@@ -30,32 +93,6 @@
           </div>
         </div>
 
-        <!-- <br> -->
-  
-        <!-- <div class="row mt-5">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <button v-on:click="showContact" class="btn btn-primary shadow-lg pt-3 pb-3 pl-5 pr-5 m-1"><h4>Contact Us</h4></button>
-            <router-link to="about">
-              <button class="btn btn-secondary pt-3 pb-3 pl-5 pr-5 m-1"><h4>Learn More</h4></button>
-            </router-link>
-          </div> 
-          <div class="col-sm-3"></div>      
-        </div> -->
-
-        <!-- <br> -->
-    
-        <!-- <div class="row mt-5">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6 bg-light rounded-lg shadow-lg" id="contact-display" style="height: 200px;">
-            <div class="text-dark">
-                <transition name="contact-transition"  enter-active-class="animated flipInX">
-                  <component :is="contact"></component>
-                </transition>
-            </div>
-          </div>     
-          <div class="col-sm-3"></div>      
-        </div> -->
 
       </div>
     </div>
@@ -129,7 +166,12 @@ export default {
   // height: 650px;  
 }
 #gallery-content {
-  background: linear-gradient(90deg, rgba(black, .9) 0%, rgba(black, .7) 40%, rgba(black, .1) 100%);
+  background: linear-gradient(90deg, rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
+  linear-gradient(180deg, rgba(black, .5) 0%, rgba(black, 0) 40%, rgba(black, 0) 100%);
+}
+
+.nav-link {
+  color: white !important;
 }
 
 #gallery-image-1 { z-index: -2; }

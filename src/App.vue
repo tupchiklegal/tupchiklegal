@@ -12,7 +12,7 @@
       </b-container>
     </div> -->
 
-    <b-navbar toggleable="lg" type="light" variant="light" class="shadow-sm">
+    <!-- <b-navbar toggleable="lg" type="light" variant="light" class="shadow-sm">
       <b-container>
         <b-navbar-brand href="#">
           <router-link to="/">
@@ -62,7 +62,7 @@
         </b-collapse>
 
       </b-container>
-    </b-navbar>
+    </b-navbar> -->
 
       <div style="min-height: 700px;">
         <transition name="router-anim" enter-active-class="animated fadeIn">
