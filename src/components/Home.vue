@@ -24,57 +24,7 @@
 
       </b-container>
     </div> -->
-    <b-navbar toggleable="lg" type="dark" class="fixed-top">
-      <b-container>
-        <b-navbar-brand href="#">
-          <router-link to="/">
-            <img src="./../assets/logo_text.png" height="80" alt="logo" class="mt-1 mb-1 mr-4">
-          </router-link>
-        </b-navbar-brand>
-
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">HOME</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/about">ABOUT</router-link>
-            </li>
-            <b-nav-item-dropdown text="PRACTICE AREAS" right>
-              <li>
-                <router-link class="dropdown-item" to="/practice/divorce-seperation">
-                  Divorce & Seperation
-                </router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/practice/high-asset">
-                  High-Asset / High Net Worth Divorce Representation
-                </router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/practice/child-custody">
-                  Child Custody & Visitation
-                </router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/practice/pre-marriage">
-                  Pre-Marriage Planning
-                </router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/practice/modifications">
-                  Modifications of Divorce Judgment
-                </router-link>
-              </li>
-                      
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
-        </b-collapse>
-
-      </b-container>
-    </b-navbar>
+        <DynamicNav></DynamicNav>
 
         
         <div class="container" style="padding-top: 325px; padding-bottom: 400px;">
@@ -114,13 +64,14 @@
 import quote from './quote.vue'
 import ContactInfo from './contact/ContactInfo.vue';
 import ContactQuote from './contact/ContactQuote.vue';
-
+import DynamicNav from './DynamicNav.vue';
 
 export default {
   components: {
       quote,  
       ContactInfo,
-      ContactQuote
+      ContactQuote,
+      DynamicNav
   },
   created () {
     window.setInterval(this.incrementGallery, 5000)
@@ -159,6 +110,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .card-main h1 {
   // font-family: 'Times New Roman', Times, serif !important;
 }
@@ -167,12 +119,10 @@ export default {
 }
 #gallery-content {
   background: linear-gradient(90deg, rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
-  linear-gradient(180deg, rgba(black, .5) 0%, rgba(black, 0) 40%, rgba(black, 0) 100%);
+  linear-gradient(180deg, rgba(black, .4) 0%, rgba(black, 0) 35%, rgba(black, 0) 100%);
 }
 
-.nav-link {
-  color: white !important;
-}
+
 
 #gallery-image-1 { z-index: -2; }
 #gallery-image-2 { z-index: -1; }

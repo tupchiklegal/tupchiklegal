@@ -82,7 +82,7 @@
           <router-link to="/about"><span class="bottom-link">Practice Areas</span></router-link>
         </div>
         <ContactInfo class="mb-3"></ContactInfo>
-        <div class="mb-3">Tupchick Legal Group 2019</div>
+        <div class="mb-3">Tupchik Legal Group 2019</div>
       </div>
 
     </footer>
