@@ -1,5 +1,5 @@
-
-@import './../assets/sf_nr/stylesheet.css';
+@import 'css/fonts/fonts.css';
+@import 'node_modules/aos/src/sass/aos.scss';
 
 $theme-colors: (
     "dark": #1f1e1d,
@@ -9,40 +9,17 @@ $primary: #b8521f;
 
 $secondary: #0089b3;
 
-// $container-large-desktop: (1370px + $grid-gutter-width);
-
 @import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
 
 @media only screen and (min-width : 1200px) {
-    .container { max-width: 1450px; }
+  .container { max-width: 1350px; }
 }
-
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-
-.bg-dark-transparent {
-    background: rgba(theme-color(dark), .6);
-}
-// #gallery-content {
-//     background: linear-gradient(180deg, rgba(theme-color(dark), .3) 0%, rgba(black, .8) 80%, white 80.1%);
-// }
-
-.router-link-exact-active {
-    color: $primary !important;
-}
-
-footer {
-    background-color: rgb(228, 233, 240);
-    color: rgb(113, 117, 121);
-    text-align: center;
-}
-
-@include media-breakpoint-down(md) { 
-    #contact-display {
-        height: auto !important;
-    }    
-}
-
