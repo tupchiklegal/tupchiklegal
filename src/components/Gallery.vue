@@ -6,8 +6,8 @@
           <!-- <div v-if="bg1Active" :style="{'background-image': 'url(' + require(`./../assets/${images[bg1Index]}`) + ')'}" id="gallery-image-1"></div> -->
 
           <div 
-          class="gallery-image" 
-          :style="{'background-image': 'url(' + require(`./../assets/stock8.jpg`) + ')'}"
+            class="gallery-image" 
+            :style="{'background-image': 'url(' + require(`./../assets/stock8.jpg`) + ')'}"
           ></div>
         
           <slot></slot>
@@ -20,9 +20,9 @@
 <style lang="scss" scoped>
 #gallery {
   background: 
-  linear-gradient(180deg, rgba(black, .0) 0%, rgba(black, 0) 40%, rgba(rgb(15,15,15), 1) 100%),
-  linear-gradient(90deg, rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
-  linear-gradient(180deg, rgba(black, .4) 0%, rgba(black, 0) 35%, rgba(black, 0) 100%);
+    linear-gradient(180deg, rgba(black, .0) 0%,  rgba(black, 0) 40%,  rgba(rgb(15,15,15), 1) 100%),
+    linear-gradient(90deg,  rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
+    linear-gradient(180deg, rgba(black, .4) 0%,  rgba(black, 0) 35%,  rgba(black, 0) 100%);
 }
 
 .gallery-image {

@@ -1,13 +1,7 @@
 @import 'css/fonts/fonts.css';
 @import 'node_modules/aos/src/sass/aos.scss';
 
-$theme-colors: (
-    "dark": #1f1e1d,
-);
-
-$primary: #b8521f;
-
-$secondary: #0089b3;
+@import './_variables.scss';
 
 @import 'node_modules/bootstrap/scss/bootstrap';
 
