@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'sf_old_republicregular';
+    src: url('sfoldrepublic-webfont.woff2') format('woff2'),
+         url('sfoldrepublic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
