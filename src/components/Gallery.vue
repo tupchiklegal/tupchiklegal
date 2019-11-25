@@ -24,7 +24,6 @@
     linear-gradient(90deg,  rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
     linear-gradient(180deg, rgba(black, .4) 0%,  rgba(black, 0) 35%,  rgba(black, 0) 100%);
 }
-
 .gallery-image {
   z-index: -2;
   position: absolute; 
@@ -34,4 +33,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 768px){
+  #gallery {
+    background: 
+      linear-gradient(180deg, rgba(black, .0) 0%,  rgba(black, 0) 40%,  rgba(rgb(15,15,15), 1) 100%),
+      // linear-gradient(90deg,  rgba(black, .92) 0%, rgba(black, .7) 55%, rgba(black, .1) 100%), 
+      linear-gradient(180deg, rgba(black, .8) 0%,  rgba(black, .8) 100%);
+  }
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="footer" class="pt-4">
-    <div class="container p-5" style="opacity: .8">
+    <div class="container pt-5 pb-3" style="opacity: .8">
       <div class="row">
         <div class="col-sm-3">
           <Contact />
@@ -11,7 +11,7 @@
             src="./../assets/logo_text_gs.png" 
             alt="logo_text_gs"
           >
-          <div class="text-left mt-4 d-flex justify-content-around">
+          <div class="text-left mt-4 d-md-flex justify-content-around">
             <div>
               <h3>Navigation</h3>
               <ul>
@@ -25,19 +25,18 @@
             <div>
               <h3>Our Team</h3>
               <ul>
-                <li><a href="">Shane Griffin</a></li>
-                <li><a href="">Shane Griffin</a></li>
-                <li><a href="">Shane Griffin</a></li>              
+                <li v-for="p in this.$people" :key="p.id">
+                  <router-link :to="{name : `person-${p.id}`}" >{{ p.name }}</router-link>
+                </li>         
               </ul>
             </div>
 
             <div>
               <h3>Practice Areas</h3>
               <ul>
-                <li><a href="">Area 1</a></li>
-                <li><a href="">Area 2</a></li>
-                <li><a href="">Area 3</a></li>
-                <li><a href="">Area 4</a></li>
+                <li v-for="p in this.$practices" :key="p.id">
+                  <router-link :to="{name : `practice-${p.id}`}" >{{ p.name }}</router-link>
+                </li>
               </ul>
             </div>
 
@@ -45,16 +44,10 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-sm-3 text-left">
-          <span>Designed by <a href="">Shane Griffin</a></span>
-        </div>
-        <div class="col-sm-6 text-center">
-          <span>Copyright 2019</span>
-        </div>
-        <div class="col-sm-3 text-right">
-          <span> Tupchick Legal Group, PLLC </span>
-        </div>
+      <div class="mt-5 d-md-flex justify-content-between">
+        <div>Designed by <a href="">Shane Griffin</a></div>
+        <div>Copyright 2019</div>
+        <div> Tupchick Legal Group, PLLC </div>
       </div>
 
     </div>

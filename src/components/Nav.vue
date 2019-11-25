@@ -1,8 +1,8 @@
 <template>
-  <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a href="" class="navbar-brand">
-        <img class="mt-1 mb-1 mr-4" src="./../assets/logo.png" height="80" alt="logo" >
+        <img id="nav-logo" class="img-fluid mt-1 mb-1 mr-4" src="./../assets/logo.png" alt="logo" >
         <h3 id="logo-name">Tupchik Legal Group</h3>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,13 +11,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">PRACTICES</a>
+            <router-link class="nav-link" to="#practices">PRACTICES</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">OUR TEAM</a>
+            <router-link class="nav-link" to="#our-team">OUR TEAM</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <router-link class="nav-link" to="#contact">CONTACT US</router-link>
           </li>
         </ul>
       </div>
@@ -56,6 +56,18 @@ export default {
 <style lang="scss" scoped>
 
 $transition-time: .7s;
+
+#nav-logo {
+  max-width: 80px;
+}
+@media (max-width: 768px){
+  #nav-logo {
+    max-width: 50px;
+  }
+  #logo-name {
+    font-size: 18px;
+  }
+}
 
 #logo-name {  
   display: inline;

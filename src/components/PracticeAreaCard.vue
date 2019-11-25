@@ -1,12 +1,20 @@
 <template>
-  <a class="practice-area-a" href="">
-    <div 
-      class="text-center ml-2 mr-2 shadow practice-area-link d-flex justify-content-center align-items-center text-dark p-1" 
-      style="height: 175px; border-radius: 4px; "
-    > 
-      <strong style="font-size: 20px;">{{ name }}</strong>
+  <router-link class="practice-area-a" :to="{name: link}" >
+    <div>
+
+      <div 
+        class="text-center ml-1 mr-1 shadow practice-area-link d-flex justify-content-center align-items-center text-dark p-2" 
+        style="height: 175px; border-radius: 4px; "
+      > 
+        <strong style="font-size: 20px;">{{ name }}</strong>
+      </div>
+
+      <div class="text-center ml-1 mr-1 shadow practice-area-link d-flex justify-content-center align-items-center text-dark p-2 learn-more">
+        <strong style="font-size: 20px;">Learn More</strong>
+      </div>
+
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
@@ -15,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./../css/_variables.scss";
   
 .practice-area-link {
@@ -23,7 +31,26 @@ export default {
   background: $primary-light;
   color: white !important;
 }
+.practice-area-a {
+  position: relative;
+}
 .practice-area-a:hover {
   text-decoration: none;  
+  @media (min-width: 768px){
+    .learn-more {
+      opacity: .9;
+      height: 100%;
+    }
+  }
+}
+.learn-more {
+  transition: height .3s, opacity .4s;
+  opacity: 0;
+  position: absolute;
+  background: $secondary;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0%;
 }
 </style>
