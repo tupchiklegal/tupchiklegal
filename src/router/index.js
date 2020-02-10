@@ -47,7 +47,9 @@ const router = new VueRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      VueScrollTo.scrollTo(to.hash);
+      VueScrollTo.scrollTo(to.hash, {
+        onDone: _ => window.location.hash = ""
+      });
       return { selector: to.hash }
     } else if (savedPosition) {
         return savedPosition;
