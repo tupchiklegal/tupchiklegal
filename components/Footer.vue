@@ -44,10 +44,19 @@
         </div>
       </div>
 
+      <div>
+
+        <nuxt-link to="/disclaimer">
+          <strong>ATTORNEY ADVERTISING</strong><br>
+          <strong>DISCLAIMER</strong>
+        </nuxt-link>
+
+      </div>
+
       <div class="mt-5 d-md-flex justify-content-between">
         <div>Designed by <a href="">Shane Griffin</a></div>
-        <div>Copyright 2019</div>
-        <div> Tupchick Legal Group, PLLC </div>
+        <div>Copyright 2020</div>
+        <div>Tupchik Legal Group, PLLC </div>
       </div>
 
     </div>

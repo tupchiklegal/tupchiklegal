@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-sm-3">
         <img class="img-fluid" src="./../static/profile.jpeg" alt="profile">
+        <slot name="contact"></slot>
       </div>
       <div class="slot col-sm-9">
         <slot ></slot>

@@ -1,29 +1,35 @@
 <template>
   <Person  >
 
-  <h4>About</h4>
+
+  <div slot="contact">
+    <address class="mt-3">
+      <h5>350 Main Street</h5>
+      <h5>Suite 2420</h5>
+      <h5>Buffalo, New York 14202</h5>
+      <h5>
+        <a href="mailto:ltupchiklaw@gmail.com">vgabrieletlg@gmail.com</a>
+      </h5>
+      <h5>Fax: 716-358-1015</h5>
+      <h5>Phone: 716-856-5556</h5>
+    </address>
+  </div>
 
   <p>
-  Ms. Gabriele graduated cum laude from the University of Buffalo and the University of Buffalo Law School
-  where she served as the case note editor for the Buffalo Journal of Gender Law and Social Policy. 
-  Ms. Gabriele has devoted her legal practice to matrimonial and family law 
-  and has established a reputation as a knowledgeable resource and effective 
-  advocate for her clients in all matters of divorce, child custody and family court proceedings. 
-  Ms. Gabriele is a member of the Executive Committee of the Family Law Section of the New York State Bar Association. 
-  In addition, she lectures extensively in the area of Matrimonial and Family Law and has chaired CLE seminars 
-  in Erie County and New York State Bar Associations as well as lectured at such seminars. 
-  Further, Ms. Gabriele has guest lectured on the practice of Matrimonial and Family Law at the 
-  University at Buffalo Law School and the State University at Buffalo. 
-  Ms. Gabriele is one of the co-chairs of the Erie County Bar Association’s Matrimonial and Family Law Committee. 
-  She is also a member of the Erie County Family Court Practice and Procedure Committee. 
-  Prior to her employment here at Bouvier Law, 
-  Ms. Gabriele worked at the boutique matrimonial and family law firm of J. Adams and Associates, PLLC,
-  a firm dedicated exclusively to matrimonial and family law litigation. 
-  She worked exclusively with and was trained by Joan Casilio Adams, Esq., 
-  a fellow of the American Academy of Matrimonial Lawyers and well respected by the Western New York Matrimonial Bar.
- </p>
+    Ms. Gabriele has devoted her legal practice to matrimonial and family law and has
+    established a reputation as a knowledgeable resource and effective advocate for her 
+    clients in all matters of divorce, child custody and family court proceedings.
+    Ms. Gabriele is a member of the Executive Committee of the Family Law Section of the New York State Bar Association.
+    In addition, she lectures extensively in the area of Matrimonial 
+    and Family Law and has chaired CLE seminars in Erie County and 
+    New York State Bar Associations as well as lectured at such seminars. 
+    Further, Ms. Gabriele has guest lectured on the practice of 
+    Matrimonial and Family Law at the University at Buffalo Law School and the State University at Buffalo. 
+    Ms. Gabriele is one of the co-chairs of the Bar Association of Erie County’s Matrimonial and Family Law Committee. 
+    She is also a member of the Bar Association of Erie County’s Family Court Practice and Procedure Committee. 
+  </p>
 
-<h4>
+<!-- <h4>
   Education and Court Admissions
 </h4>
 
@@ -118,7 +124,7 @@
   <li>
   Child Custody
   </li>
-</ul>
+</ul> -->
 
 
   </person>
@@ -133,3 +139,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  address h5 {
+    font-size: 15px !important;
+  }
+</style>

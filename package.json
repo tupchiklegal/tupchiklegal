@@ -5,7 +5,7 @@
   "author": "shanegri",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "PORT=80 HOST=0.0.0.0 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

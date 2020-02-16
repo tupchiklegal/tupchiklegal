@@ -1,9 +1,9 @@
 <template>
   <nuxt-link :to="link">
-    <div style="max-width: 250px;" class="person-card card shadow-sm">
+    <div style="max-width: 280px;" class="person-card card shadow-sm">
         <img style="width: 100%" src="./../static/profile.jpeg" alt="profile">
         <div class="p-3 text-justify">
-          <h4 style="font-size: 20px;" class="text-left">{{ name }}</h4>
+          <h4 style="font-size: 15px;" class="text-left font-weight-bold">{{ name }}</h4>
           <p style="font-size: 16px; color: black">
             {{ description }}
           </p>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  props: ['name', 'link', 'description']
+  props: ['name', 'link', 'description', 'pic']
 }
 </script>
 

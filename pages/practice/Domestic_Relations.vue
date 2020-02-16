@@ -9,10 +9,7 @@
       If you are considering a divorce, 
       it is essential that you know your rights to protect your interests, 
       your children’s well being, as well as your assets and finances. 
-      High-asset divorces are among the most complex and potentially contentious.
-      At Bouvier Law LLP, we have the experience and sophistication to handle matrimonial
-      and family law matters for professionals, including athletes, doctors, attorneys,
-      and high-profile executives.
+      We are here to guide you through one of the most important financial decisions of your lifetime.
     </p>
 
     <p>
@@ -40,7 +37,7 @@
       </div>      
     </div>
 
-    <p>
+    <!-- <p>
       Working with the experienced attorneys at Tupchik Legal Group allows 
       high net worth — and high-profile — couples to retain their privacy and 
       their profits during this difficult time.
@@ -51,7 +48,7 @@
       process in both property settlement agreements and courtroom litigation. 
       We often connect clients with tax and investment professionals who can advise them 
       on how to best manage their money after the divorce is final.
-    </p>
+    </p> -->
   </Practice>
 </template>
 

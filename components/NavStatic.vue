@@ -16,7 +16,7 @@
           </li> 
 
           <li class="dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRACTICES 
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">AREAS OF PRACTICE 
             <span class="caret"></span></a>
             <ul class="dropdown-menu p-2">
               <li v-for="p in this.practices" v-bind:key="p.id">

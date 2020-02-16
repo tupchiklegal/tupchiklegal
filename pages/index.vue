@@ -7,9 +7,9 @@
     <!-- gallery -->
     <Gallery>
       <div class="container text-left text-light" style="padding-top: 335px; padding-bottom: 300px;">
-        <h1 class="display-4" style="font-weight: 700">
+        <!-- <h1 class="display-4" style="font-weight: 700">
           HOLISTIC LEGAL RESOLUTION
-        </h1>
+        </h1> -->
         <p style="font-size:30px;">
           We offer clients personalized attention and one-on-one service. <br> You will never get lost in the shuffle.
         </p>
@@ -21,7 +21,7 @@
     <!-- about -->
     <div id="about" style="background: rgb(15,15,15)" class="pb-5 text-light">
       <div data-aos="fade" data-aos-offset="275" data-aos-duration="700" class="container text-center pb-5">
-        <h2 class="roman-head">FAMILY & MATRIMONIAL LAW</h2>
+        <h2 class="roman-head">CRIMINAL AND FAMILY LAW</h2>
         <p style="font-size: 22px;">
           When it comes to family, legal matters can be challenging, sensitive and highly volatile. 
           With Tupchik Legal, 
@@ -31,7 +31,7 @@
         </p>
         <div id="icons" class="d-md-flex justify-content-around text-center pt-5">
           
-          <div data-aos="fade-up" data-aos-duration="700" data-aos-offset="0">
+          <!-- <div data-aos="fade-up" data-aos-duration="700" data-aos-offset="0">
             <h3>40+</h3>
             <p>Years combined experience</p>
           </div>
@@ -49,7 +49,7 @@
           <div data-aos="fade-up" data-aos-duration="700" data-aos-offset="120">
             <h3>24/7</h3>
             <p>Support</p>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -73,10 +73,10 @@
     <!-- practice areas -->
     <div id="practices" class="container text-left mt-5 mb-5 pt-5 pb-5 text-center">
       <div data-aos="fade-in" data-aos-duration="700" >
-        <h2 class="roman-head font-weight-bold">PRACTICES</h2>
-        <p style="font-size: 22px;">
+        <h2 class="roman-head font-weight-bold">PRACTICE</h2>
+        <!-- <p style="font-size: 22px;">
         With over 40 combined years of experience in handling family law matters right here in Buffalo, our practice is well-seasoned in issues involving:
-        </p>
+        </p> -->
       </div>
       <div class="d-md-flex justify-content-between mt-5 mb-4">
         <PracticeAreaCard 
@@ -87,7 +87,7 @@
           v-for="p in this.practices" 
           v-bind:link="p.link"
           v-bind:name="p.name" 
-        />
+      />
       </div>
     </div>
 
@@ -111,6 +111,7 @@
               v-for="p in this.people" 
               :key="p.id" 
               :name="p.name"
+              :pic="p.pic"
               :link="p.link"
               :description="p.description"
             />

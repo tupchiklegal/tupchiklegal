@@ -3,7 +3,7 @@
     <div class="container">
       <a href="" class="navbar-brand">
         <img id="nav-logo" class="img-fluid mt-1 mb-1 mr-4" src="./../static/logo.png" alt="logo" >
-        <h3 id="logo-name">Tupchik Legal Group</h3>
+        <h3 id="logo-name">Tupchik Legal Group</h3><small class="text-light">, PLLC</small>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" v-scroll-to="'#practices'">PRACTICES</a>
+            <a class="nav-link" href="#" v-scroll-to="'#practices'">AREAS OF PRACTICE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" v-scroll-to="'#our-team'">OUR TEAM</a>
@@ -76,7 +76,7 @@ $transition-time: .7s;
 #nav {
   transition: background $transition-time;
 }
-.nav-link, #logo-name {
+.nav-link, #logo-name, small {
   color: rgba(white, .8) !important;
   transition: color $transition-time;
 }
@@ -86,7 +86,7 @@ $transition-time: .7s;
   .nav-link {
     color: rgba(black, .8) !important;
   }
-  #logo-name {
+  #logo-name, small {
     color: rgba(black, .7) !important;
   }
 }
