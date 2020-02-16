@@ -6,12 +6,14 @@
     
     <!-- gallery -->
     <Gallery>
-      <div class="container text-left text-light" style="padding-top: 335px; padding-bottom: 300px;">
-        <!-- <h1 class="display-4" style="font-weight: 700">
-          HOLISTIC LEGAL RESOLUTION
-        </h1> -->
-        <p style="font-size:30px;">
-          We offer clients personalized attention and one-on-one service. <br> You will never get lost in the shuffle.
+      <div class="container text-left text-light" style="padding-top: 275px; padding-bottom: 300px;">
+        <h1 class="display-4 d-inline" style="font-weight: 700">
+          Tupchik Legal Group,
+        </h1>
+        <h3 class="d-inline">PLLC</h3>
+        <p style="font-size: 28px;">
+          Committed to providing high quality representation in a timely <br> and cost-efficient manner.  
+          <strong> We pride ourselves on being experienced, <br> respected trial lawyers, advocates, and negotiators. </strong>
         </p>
         <nuxt-link to="#about" class="btn btn-primary mr-4">Learn More</nuxt-link>
         <nuxt-link to="#contact" class="btn btn-secondary">Contact Us</nuxt-link>
