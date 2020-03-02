@@ -1,5 +1,22 @@
 <template>
-  <Person picture="" >
+
+  <Person id="2" >
+
+  <div slot="contact">
+    <address class="mt-3">
+      <h5>350 Main Street</h5>
+      <h5>Suite 2420</h5>
+      <h5>Buffalo, New York 14202</h5>
+      <h5>
+        <a href="mailto:infotupchiklegalgroup@gmail.com">
+            infotupchiklegalgroup@gmail.com
+          </a>
+      </h5>
+      <h5>Fax: 716-358-1015</h5>
+      <h5>Phone: 716-856-5556</h5>
+    </address>
+  </div>
+
     <p>
     Melissa has over twelve years experience in family law. Melissa is a graduate of Hilbert
     College, with a Bachelor’s degree in Paralegal Studies in 2007 and a Bachelor’s in Business

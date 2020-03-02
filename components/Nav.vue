@@ -11,13 +11,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" v-scroll-to="'#practices'">AREAS OF PRACTICE</a>
+            <a v-on:click="onScroll('practices')" class="nav-link" href="#" v-scroll-to="'#practices'">AREAS OF PRACTICE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" v-scroll-to="'#our-team'">OUR TEAM</a>
+            <a v-on:click="onScroll('our-team')" class="nav-link" href="#" v-scroll-to="'#our-team'">OUR TEAM</a>
           </li>
           <li class="nav-item"> 
-            <a class="nav-link" href="#" v-scroll-to="'#contact'">CONTACT US</a>
+            <a v-on:click="onScroll('contact')" class="nav-link" href="#" v-scroll-to="'#contact'">CONTACT US</a>
           </li>
         </ul>
       </div>
@@ -36,6 +36,9 @@ export default {
     }
   },
   methods: {
+    onScroll(target) {
+      history.pushState({}, '', `#${target}`);
+    },
     scroll(e) {
       if (!this.bgWhite && window.scrollY > transitionBreakPoint) {
         this.bgWhite = true;
@@ -75,6 +78,12 @@ $transition-time: .7s;
 }
 #nav {
   transition: background $transition-time;
+}
+.nav-item {
+  transition: all .2s ease-in-out;
+}
+.nav-item:hover {
+  transform: scale(1.05);
 }
 .nav-link, #logo-name, small {
   color: rgba(white, .8) !important;

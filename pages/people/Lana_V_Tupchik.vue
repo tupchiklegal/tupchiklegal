@@ -1,5 +1,5 @@
 <template>
-  <Person>
+  <Person id="0" >
 
     <div slot="contact">
       <address class="mt-4">

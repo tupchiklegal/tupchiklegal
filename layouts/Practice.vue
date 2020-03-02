@@ -1,6 +1,8 @@
 <template>
   <Page :name="name">
+    <div class="card shadow p-4">
       <slot></slot>
+    </div>
   </Page>
 </template>
 

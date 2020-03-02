@@ -1,9 +1,11 @@
 <template>
   <nuxt-link :to="link">
-    <div style="max-width: 280px;" class="person-card card shadow-sm">
-        <img style="width: 100%" src="./../static/profile.jpeg" alt="profile">
+    <div class="person-card card shadow">
+        <div style="height: 220px;">
+          <img class="img-fluid h-100" :src="require(`./../static/${pic}`)" alt="profile">
+        </div>
         <div class="p-3 text-justify">
-          <h4 style="font-size: 15px;" class="text-left font-weight-bold">{{ name }}</h4>
+          <h4 style="font-size: 14px;" class="text-center font-weight-bold">{{ name }}</h4>
           <p style="font-size: 16px; color: black">
             {{ description }}
           </p>

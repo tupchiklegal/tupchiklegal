@@ -6,7 +6,7 @@
     
     <!-- gallery -->
     <Gallery>
-      <div class="container text-left text-light" style="padding-top: 275px; padding-bottom: 300px;">
+      <div class="container text-left text-light" style="padding-top: 250px; padding-bottom: 300px;">
         <h1 class="display-4 d-inline" style="font-weight: 700">
           Tupchik Legal Group,
         </h1>
@@ -15,8 +15,9 @@
           Committed to providing high quality representation in a timely <br> and cost-efficient manner.  
           <strong> We pride ourselves on being experienced, <br> respected trial lawyers, advocates, and negotiators. </strong>
         </p>
-        <nuxt-link to="#about" class="btn btn-primary mr-4">Learn More</nuxt-link>
-        <nuxt-link to="#contact" class="btn btn-secondary">Contact Us</nuxt-link>
+        <a v-on:click="onScroll('about')" class="btn btn-primary" href="#" v-scroll-to="'#about'">Learn More</a>
+        <a v-on:click="onScroll('contact')" class="btn btn-secondary" href="#" v-scroll-to="'#contact'">Contact Us</a>
+
       </div>
     </Gallery>
 
@@ -25,11 +26,12 @@
       <div data-aos="fade" data-aos-offset="275" data-aos-duration="700" class="container text-center pb-5">
         <h2 class="roman-head">CRIMINAL AND FAMILY LAW</h2>
         <p style="font-size: 22px;">
-          When it comes to family, legal matters can be challenging, sensitive and highly volatile. 
+          <!-- When it comes to family, legal matters can be challenging, sensitive and highly volatile. 
           With Tupchik Legal, 
           you’ll find our family and matrimonial law attorneys combine compassion with practical advice to deliver caring, 
           yet effective resolutions for our clients. 
-          Our goal is to successfully resolve family legal matters while minimizing cost and emotional upheaval.
+          Our goal is to successfully resolve family legal matters while minimizing cost and emotional upheaval. -->
+          Tupchik Legal Group is not your typical law firm. We have earned a stellar reputation for taking on difficult, complex cases and maintain a track record of zealously and respectfully fighting for our clients. We are experienced, dogged and diligent, never backing down on behalf of our clients. We work as a team with our clients and work to maximize our clients’ objectives. Where others fail, we succeed.
         </p>
         <div id="icons" class="d-md-flex justify-content-around text-center pt-5">
           
@@ -62,12 +64,15 @@
       <div id="parallax-1-content" class="h-100 pt-5 pb-5">
         <div class="h-100 container pt-5 pb-5 d-flex justify-content-center align-items-center">
           <h2>BOOK A CONSULATION</h2>
-          <router-link
-            to="#contact"
-            href=""
-            class="ml-5 p-2 pl-5 pr-5"
-            style="color: white;border: 1px solid white; border-radius: 6px;"
-          ><h2>Contact</h2></router-link>
+
+            <a       
+              v-on:click="onScroll('contact')"      
+              class="ml-5 p-2 pl-5 pr-5"
+              href="#" 
+              v-scroll-to="'#contact'"
+              style="color: white;border: 1px solid white; border-radius: 6px;"
+            ><h2>Contact</h2></a>
+          
         </div>
       </div>
     </div>
@@ -75,12 +80,13 @@
     <!-- practice areas -->
     <div id="practices" class="container text-left mt-5 mb-5 pt-5 pb-5 text-center">
       <div data-aos="fade-in" data-aos-duration="700" >
-        <h2 class="roman-head font-weight-bold">PRACTICE</h2>
+        <h2 class="roman-head font-weight-bold">AREAS OF PRACTICE</h2>
+        <hr>
         <!-- <p style="font-size: 22px;">
         With over 40 combined years of experience in handling family law matters right here in Buffalo, our practice is well-seasoned in issues involving:
         </p> -->
       </div>
-      <div class="d-md-flex justify-content-between mt-5 mb-4">
+      <div class="d-md-flex justify-content-between mb-5 flex-wrap">
         <PracticeAreaCard 
           data-aos="fade-up"
           data-aos-duration="700"
@@ -91,6 +97,8 @@
           v-bind:name="p.name" 
       />
       </div>
+
+      <hr>
     </div>
 
     <!-- our team -->
@@ -105,8 +113,8 @@
             </p>
           </div>
         </div>
-          <div class="col-sm-6 d-md-flex pt-5 pb-5 mt-5 mb-5 justify-content-around text-center">
-            <PersonCard 
+          <div class="col-sm-7 d-md-flex pt-5 pb-5 mt-5 mb-5 justify-content-around text-center">
+          <PersonCard 
               data-aos="fade-left"
               data-aos-duration="700"
               :data-aos-delay="(p.id - 1) * 50"
@@ -119,7 +127,7 @@
             />
         </div>
 
-        <div class="col-sm-1"></div>
+        <!-- <div class="col-sm-1"></div> -->
  
       </div>      
     </div>
@@ -142,10 +150,10 @@
     <!-- contact us body -->
     <div id="contact-us" class="container mt-5 pt-0 mb-5 pb-5">
       <div class="row">
-        <div class="col-sm-3 text-left d-flex align-items-center pt-5 pr-0">
-          <Contact />
+        <div class="col-sm-5 text-left d-flex align-items-center pt-5 pr-0">
+          <Contact directions />
         </div>  
-        <div class="col-sm-9">
+        <div class="col-sm-7">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.4447816911393!2d-78.87738718452702!3d42.88456172915519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d31248532beb9b%3A0x1cb6fe2bbd09208!2sMain%20Place%20Liberty%20Group!5e0!3m2!1sen!2sus!4v1574562836098!5m2!1sen!2sus" 
               frameborder="0" 
@@ -191,6 +199,12 @@ export default {
   },
   created() {
     AOS.init();
+  },
+  methods: {
+    onScroll(target) {
+      history.pushState({}, '', `#${target}`);
+
+    }
   }
 };
 </script>

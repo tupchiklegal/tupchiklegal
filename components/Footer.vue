@@ -13,7 +13,7 @@
           >
           <div class="text-left mt-4 d-md-flex justify-content-around">
             <div>
-              <h3>Navigation</h3>
+              <h3><strong>Navigation</strong></h3>
               <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Practices</a></li>
@@ -23,7 +23,7 @@
             </div>
             
             <div>
-              <h3>Our Team</h3>
+              <h3><strong>Our Team</strong></h3>
               <ul>
                 <li v-for="p in this.people" :key="p.id">
                   <nuxt-link :to="p.link" >{{ p.name }}</nuxt-link>
@@ -32,7 +32,7 @@
             </div>
 
             <div>
-              <h3>Practice Areas</h3>
+              <h3><strong>Practice Areas</strong></h3>
               <ul>
                 <li v-for="p in this.practices" :key="p.id">
                   <nuxt-link :to="p.link" >{{ p.name }}</nuxt-link>

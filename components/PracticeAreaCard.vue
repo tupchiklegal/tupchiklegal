@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="practice-area-a" :to="link" >
+  <nuxt-link class="practice-area-a mt-3" :to="link" >
     <div>
 
       <div 
