@@ -15,10 +15,10 @@
             <div>
               <h3><strong>Navigation</strong></h3>
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Practices</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="/#">Home</a></li>
+                <li><a href="/#practices">Areas of Practice</a></li>
+                <li><a href="/#our-team">Our Team</a></li>
+                <li><a href="/#contact">Contact</a></li>
               </ul>
             </div>
             

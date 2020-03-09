@@ -14,6 +14,9 @@
             <a v-on:click="onScroll('practices')" class="nav-link" href="#" v-scroll-to="'#practices'">AREAS OF PRACTICE</a>
           </li>
           <li class="nav-item">
+            <a v-on:click="onScroll('about')" class="nav-link" href="#" v-scroll-to="'#about'">ABOUT US</a>
+          </li>
+          <li class="nav-item">
             <a v-on:click="onScroll('our-team')" class="nav-link" href="#" v-scroll-to="'#our-team'">OUR TEAM</a>
           </li>
           <li class="nav-item"> 

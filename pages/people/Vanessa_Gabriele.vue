@@ -7,7 +7,7 @@
       <h5>Suite 2420</h5>
       <h5>Buffalo, New York 14202</h5>
       <h5>
-        <a href="mailto:ltupchiklaw@gmail.com">vgabrieletlg@gmail.com</a>
+        <a href="mailto:vgabrieletlg@gmail.com">vgabrieletlg@gmail.com</a>
       </h5>
       <h5>Fax: 716-358-1015</h5>
       <h5>Phone: 716-856-5556</h5>

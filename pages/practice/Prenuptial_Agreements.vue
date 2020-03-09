@@ -1,16 +1,19 @@
 <template>
   <Practice>
     <p>
-      Prenuptial agreements, commonly known as “prenups,” 
+      When you decide to get married, it’s a big step and an even bigger commitment. 
+      You agree to be taking on care and responsibility for a spouse, and even children. 
+      Being fully aware of the laws with regard to marriage is a responsible way to be prepared 
+      to avoid any problems down the road. Prenuptial agreements, commonly known as “prenups,” 
       are legal documents that outline how engaged couples will divide their assets if they divorce. 
-      And, in recent years, more people have been requesting them, 
-      according to a survey of matrimonial lawyers. Our firm offers services concerning the following:
+      And, in recent years, more people have been requesting them, according to a survey of matrimonial lawyers. 
+      Our firm offers services concerning the following:
     </p>
     <ul>
       <li>Prenuptial Agreements</li>
       <li>Pre-marriage asset consultation</li>
       <li>Property valuation</li>
-      <li>Postnuptial Agreements (made after you are married)</li>
+      <!-- <li>Postnuptial Agreements (made after you are married)</li> -->
     </ul>
     <p>
       A pre-marital (or pre-nuptial) agreement is entered into before the marriage and specifies each future spouses property 

@@ -1,5 +1,6 @@
 <template>
   <Practice>
+    <h4>EXPERIENCED CRIMINAL DEFENSE ATTORNEYS SERVING WESTERN NEW YORK</h4>
     <p>
       Tupchik Legal Group works with individuals accused of criminal charges in federal, 
       state, and municipal courts. 

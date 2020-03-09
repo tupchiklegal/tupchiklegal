@@ -2,6 +2,7 @@
   <nuxt-link :to="link">
     <div class="person-card card shadow">
         <div style="height: 220px;">
+          <!-- <img class="img-fluid h-100" :src="require(`./../static/Lana.jpg`)" alt="profile"> -->
           <img class="img-fluid h-100" :src="require(`./../static/${pic}`)" alt="profile">
         </div>
         <div class="p-3 text-justify">

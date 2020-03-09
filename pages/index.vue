@@ -6,12 +6,12 @@
     
     <!-- gallery -->
     <Gallery>
-      <div class="container text-left text-light" style="padding-top: 250px; padding-bottom: 300px;">
-        <h1 class="display-4 d-inline" style="font-weight: 700">
-          Tupchik Legal Group,
+      <div class="container text-center text-light" style="padding-top: 250px; padding-bottom: 300px;">
+        <h1 class="display-4 d-inline" style="font-weight: 700; text-decoration: underline;">
+          Tupchik Legal Group
         </h1>
-        <h3 class="d-inline">PLLC</h3>
-        <p style="font-size: 28px;">
+        <!-- <h3 class="d-inline">PLLC</h3> -->
+        <p style="font-size: 25px;">
           Committed to providing high quality representation in a timely <br> and cost-efficient manner.  
           <strong> We pride ourselves on being experienced, <br> respected trial lawyers, advocates, and negotiators. </strong>
         </p>
@@ -24,7 +24,7 @@
     <!-- about -->
     <div id="about" style="background: rgb(15,15,15)" class="pb-5 text-light">
       <div data-aos="fade" data-aos-offset="275" data-aos-duration="700" class="container text-center pb-5">
-        <h2 class="roman-head">CRIMINAL AND FAMILY LAW</h2>
+        <h2 class="roman-head">ABOUT US</h2>
         <p style="font-size: 22px;">
           <!-- When it comes to family, legal matters can be challenging, sensitive and highly volatile. 
           With Tupchik Legal, 
@@ -88,6 +88,7 @@
       </div>
       <div class="d-md-flex justify-content-between mb-5 flex-wrap">
         <PracticeAreaCard 
+          class="flex-fill"
           data-aos="fade-up"
           data-aos-duration="700"
           v-bind:data-aos-delay="(p.id - 1)*50"
@@ -109,7 +110,7 @@
           <div>
             <h2 class="roman-head text-light mb-0" style="font-weight: bold; font-size: 55px;">OUR TEAM</h2>
             <p class="text-light" style="font-size: 21px;">
-              Experienced. Dedicated. Caring
+              <!-- Experienced. Dedicated. Caring -->
             </p>
           </div>
         </div>
@@ -155,7 +156,7 @@
         </div>  
         <div class="col-sm-7">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.4447816911393!2d-78.87738718452702!3d42.88456172915519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d31248532beb9b%3A0x1cb6fe2bbd09208!2sMain%20Place%20Liberty%20Group!5e0!3m2!1sen!2sus!4v1574562836098!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.4660898709567!2d-78.87761998414328!3d42.88411207915516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d31249ce87a7b5%3A0x7b9abe1251803679!2s350%20Main%20St%20%232420%2C%20Buffalo%2C%20NY%2014202!5e0!3m2!1sen!2sus!4v1583794661584!5m2!1sen!2sus" 
               frameborder="0" 
               style="border:0; width: 100%; height: 100%" 
               allowfullscreen=""
@@ -203,7 +204,6 @@ export default {
   methods: {
     onScroll(target) {
       history.pushState({}, '', `#${target}`);
-
     }
   }
 };
