@@ -5,7 +5,8 @@
     <Nav/>
     
     <!-- gallery -->
-    <Gallery>
+    <Gallery> 
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/" hidden >Background image 'stock8.jpg' license & source, from wikipedia 'File:Aerial photo of Buffalo, NY Skyline.jpg</a>
       <div class="container text-center text-light" style="padding-top: 250px; padding-bottom: 300px;">
         <h1 class="display-4 d-inline" style="font-weight: 700; text-decoration: underline;">
           Tupchik Legal Group
@@ -229,7 +230,7 @@ export default {
   // font-weight:bold;
 }
 #parallax-1 {
-  background-image: url("./../static/stock3.jpg");
+  background-image: url("./../static/statue-1.jpg");
 
   background-attachment: fixed;
   background-position: center;
@@ -268,7 +269,7 @@ $our-team-grey: rgb(255, 249, 240);
 
 #contact-us-head {
   height: 250px;
-  background-image: url("./../static/stock8.jpg");
+  background-image: url("./../static/desk-1.jpg");
   // background-position: 0px -275px;
   background-repeat: no-repeat;
   background-position: center;
