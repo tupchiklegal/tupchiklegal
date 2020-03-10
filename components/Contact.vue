@@ -54,10 +54,10 @@
     </div>
 
     <div class="social d-flex justify-content-between mb-3 mt-5">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-envelope"></a>
+      <a target="_blank" href="https://www.facebook.com/TupchikLegalGroup/" class="fa fa-facebook"></a>
+      <a target="_blank" href="https://www.instagram.com/tupchiklegalgroup" class="fa fa-instagram"></a>
+      <!-- <a href="#" class="fa fa-twitter"></a> -->
+      <a href="mailto:ltupchiklaw@gmail.com" class="fa fa-envelope"></a>
     </div>
   </div>
 </template>
