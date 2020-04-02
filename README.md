@@ -1,6 +1,6 @@
-# tupchiklegal
+# gabrielelawpllc
 
-> tupchiklegal website
+> gabrielelawpllc website
 
 ## Build Setup
 
